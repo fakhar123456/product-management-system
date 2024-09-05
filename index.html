@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Products System</h1>
+        <div class="form-group">
+            <label for="productName">Product Name:</label>
+            <input type="text" id="productName" placeholder="Enter product name...">
+        </div>
+        <div class="form-group">
+            <label for="productPrice">Product Price:</label>
+            <input type="number" id="productPrice" placeholder="Enter product price...">
+        </div>
+        <div class="form-group">
+            <label for="productCategory">Product Category:</label>
+            <select id="productCategory">
+                <option value="FOOD">FOOD</option>
+                <option value="ELECTRONICS">ELECTRONICS</option>
+                <option value="CLOTHING">CLOTHING</option>
+               
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="productCondition">Product Condition:</label>
+            <select id="productCondition">
+                <option value="Good">Good</option>
+                <option value="Average">Average</option>
+                <option value="Bad">Bad</option>
+               
+            </select>
+        </div>
+        <div class="buttons">
+            <button id="addProduct">Add Product</button>
+            <button id="clearForm">Clear</button>
+        </div>
+        <div class="form-group">
+            <input type="text" id="searchName" placeholder="Search By Name...">
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Index</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Category</th>
+                    <th>Condition</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="productList">
+                
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
